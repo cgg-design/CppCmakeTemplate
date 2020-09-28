@@ -1,0 +1,27 @@
+if(USE_BENCHMARKS)
+    set(BENCHMAK_SOURCES        "main.cpp")
+    set(BENCHMAK_MAIN           "${PROJECT}_benchmarks")
+    set(BENCH_RUNNER_PARAMS     "-O3")
+    
+    # if(WIN32)
+    #     set(BENCHMAK_FLAGS     "/Od")
+    # endif()
+    # if(UNIX)
+    #     set(BENCHMAK_FLAGS     "-O0; -g")
+    # endif()
+    #---
+    # diesen abfrage am besten nach der Compiler machen
+    if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+        set(BENCHMARK_FLAGS "/Ox")
+    elseif(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+        set(BENCHMARK_FLAGS "-O2")
+    else()
+        set(BENCHMARK_FLAGS "")
+    endif()
+
+    add_executable(${BENCHMAK_MAIN} ${BENCHMAK_SOURCES})
+    target_compile_options(${BENCHMAK_MAIN} PUBLIC ${BENCHMAK_FLAGS})
+    target_compile_features(${BENCHMAK_MAIN} PUBLIC cxx_std_17)
+    target_link_libraries(${BENCHMAK_MAIN} PUBLIC ${LIBRARY_NAME})
+    target_link_libraries(${BENCHMAK_MAIN} PUBLIC ${LIBRARY_BENCH})
+endif()

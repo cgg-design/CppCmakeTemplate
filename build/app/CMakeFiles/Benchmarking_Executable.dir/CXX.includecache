@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../external/linalg/linalg.h
+cmath
+-
+cstdlib
+-
+cstdint
+-
+array
+-
+iosfwd
+-
+type_traits
+-
+functional
+-
+
+../external/loguru/loguru.hpp
+loguru.hpp
+-
+sal.h
+-
+fmt/format.h
+-
+cstdarg
+-
+sstream
+-
+string
+-
+
+../include/my_lib.h
+cstdint
+-
+linalg.h
+../include/linalg.h
+
+/mnt/c/Users/Lenovo/MyData/Visual Studio Code/Workspace/3_CMake/12_FinalTemplate/app/main.cpp
+iostream
+-
+my_lib.h
+/mnt/c/Users/Lenovo/MyData/Visual Studio Code/Workspace/3_CMake/12_FinalTemplate/app/my_lib.h
+ProjectConfig.h
+/mnt/c/Users/Lenovo/MyData/Visual Studio Code/Workspace/3_CMake/12_FinalTemplate/app/ProjectConfig.h
+loguru.hpp
+/mnt/c/Users/Lenovo/MyData/Visual Studio Code/Workspace/3_CMake/12_FinalTemplate/app/loguru.hpp
+
+ProjectConfig.h
+

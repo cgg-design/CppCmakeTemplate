@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libBenchmarking_loguru.a CMakeFiles/Benchmarking_loguru.dir/loguru/loguru.cpp.o
+/usr/bin/ranlib ../lib/libBenchmarking_loguru.a
