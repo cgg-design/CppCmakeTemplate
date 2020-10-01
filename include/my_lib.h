@@ -5,7 +5,7 @@
 #include "linalg.h"
 
 /**
- * @brief This function prints hello world.
+ * @brief This function prints hello world XXXXXXXX.
  * 
  * @return true 
  * @return false 
@@ -36,7 +36,7 @@ linalg::aliases::float3 print_linalg_vector();
 bool print_boost_version();
 
 /**
- * @brief This function computes the integer average of two integers.
+ * @brief This function computes the integer average of  two integers.
  * 
  * @param a The first integer value.
  * @param b The second integer value.

@@ -27,8 +27,8 @@ configure_file("${PROJECT_SOURCE_DIR}/include/ProjectConfig.h.in"
                "${PROJECT_BINARY_DIR}/ProjectConfig.h" @ONLY)
 
 # Include own cmake modules
-set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
-include(Documentation)
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/") # wo liegt cmake module
+include(Documentation) # gukct, ob cmake vorliegt
 include(CTest)
 include(ConfigSafeGuards)
 include(Warnings)
