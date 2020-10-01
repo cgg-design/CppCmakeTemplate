@@ -4,8 +4,8 @@ dist: bionic
 
 matrix:
   include:
-    - name: "Linux" # system
-      os: linux  # betriebssystem, wo es laufen soll
+    - name: "Linux"
+      os: linux 
       env:
         - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
       addons:
@@ -21,7 +21,6 @@ matrix:
             osx_image: xcode10
             env:
               - MATRIX_EVAL="CC=clang && CXX=clang++"
-# vor instalieren erst mal checken, ob matrix_eval true ist(benötigte compiler instaliert ist)
 before_install:
   eval "${MATRIX_EVAL}"
 
@@ -31,4 +30,4 @@ install:
   - pip install --user conan
   - source ~/.profile
   - conan user
-  - conan install .. # benötige pkt instalieren (eine ordner zurück)
+  - conan install ..
