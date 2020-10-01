@@ -46,11 +46,15 @@ conan_basic_setup()
 
 # Add externals
 add_subdirectory(external)
+
 # Add libraries
 add_subdirectory(src)
+
 # Add executables
 add_subdirectory(app)
+
 # Add tests
 add_subdirectory(tests)
+
 # Add benchmarks
 add_subdirectory(benchmarks)

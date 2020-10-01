@@ -1,4 +1,3 @@
-// Hier ist benchmarktest
 #include <celero/Celero.h>
 
 #include <random>

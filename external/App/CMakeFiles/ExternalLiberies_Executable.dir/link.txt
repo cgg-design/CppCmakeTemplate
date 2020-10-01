@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/ExternalLiberies_Executable.dir/main.cpp.o ../src/CMakeFiles/ExternalLiberies_MyLib.dir/my_lib.cpp.o -o ExternalLiberies_Executable 
